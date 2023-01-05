@@ -59,6 +59,27 @@
   </entry>
   
   <entry>
+    <title>Ubuntu 20.04换源教程</title>
+    <link href="https://adunm.top/posts/99f6b1e6/"/>
+    <id>https://adunm.top/posts/99f6b1e6/</id>
+    <published>2022-12-25T06:39:31.372Z</published>
+    <updated>2022-12-26T07:21:30.846Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>系统环境</th></tr></thead><tbody><tr><td>ubuntu 20.04</td></tr></tbody></table></div><h3 id="这里我们选用阿里源做演示"><a href="#这里我们选用阿里源做演示" class="headerlink" title="这里我们选用阿里源做演示"></a>这里我们选用阿里源做演示</h3><p><a href="https://developer.aliyun.com/mirror/" title="阿里巴巴开源镜像站">阿里巴巴开源镜像站</a><br><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" title="清华大学开源软件镜像站">清华大学开源软件镜像站</a><br><a href="https://mirrors.ustc.edu.cn/repogen/" title="中科大镜像源">中科大镜像源</a><br>ubuntu 20.04(focal) 配置如下<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line"># deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure></p><h3 id="把默认的源地址先备份一下"><a href="#把默认的源地址先备份一下" class="headerlink" title="把默认的源地址先备份一下"></a>把默认的源地址先备份一下</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources_init.list</span><br></pre></td></tr></table></figure><h3 id="用vim编辑源文件"><a href="#用vim编辑源文件" class="headerlink" title="用vim编辑源文件"></a>用vim编辑源文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure><div class="note warning simple"><p>删掉原来的源，添加的阿里源，注意 sources.list 文件只能放一种源</p></div><div class="note info simple"><p>在英文模式下按 i 键进行编辑，保存 ESC+Shitf+: 然后输入：wq 保存</p></div><h3 id="更新镜像源"><a href="#更新镜像源" class="headerlink" title="更新镜像源"></a>更新镜像源</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h3 id="更新软件"><a href="#更新软件" class="headerlink" title="更新软件"></a>更新软件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure><h3 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get dist-upgrade</span><br></pre></td></tr></table></figure><div class="note success simple"><p>success 到这步源就全部更新完成了</p></div>]]></content>
+    
+    
+    <summary type="html">Ubuntu 20.04换源教程</summary>
+    
+    
+    
+    <category term="linux" scheme="https://adunm.top/categories/linux/"/>
+    
+    
+    <category term="🖥️ Ubuntu" scheme="https://adunm.top/tags/%F0%9F%96%A5%EF%B8%8F-Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动续订E5</title>
     <link href="https://adunm.top/posts/4aa8ab/"/>
     <id>https://adunm.top/posts/4aa8ab/</id>
@@ -97,27 +118,6 @@
     
     
     <category term="🌐 Vercel" scheme="https://adunm.top/tags/%F0%9F%8C%90-Vercel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 20.04换源教程</title>
-    <link href="https://adunm.top/posts/99f6b1e6/"/>
-    <id>https://adunm.top/posts/99f6b1e6/</id>
-    <published>2022-12-25T06:39:31.372Z</published>
-    <updated>2022-12-26T07:21:30.846Z</updated>
-    
-    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>系统环境</th></tr></thead><tbody><tr><td>ubuntu 20.04</td></tr></tbody></table></div><h3 id="这里我们选用阿里源做演示"><a href="#这里我们选用阿里源做演示" class="headerlink" title="这里我们选用阿里源做演示"></a>这里我们选用阿里源做演示</h3><p><a href="https://developer.aliyun.com/mirror/" title="阿里巴巴开源镜像站">阿里巴巴开源镜像站</a><br><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" title="清华大学开源软件镜像站">清华大学开源软件镜像站</a><br><a href="https://mirrors.ustc.edu.cn/repogen/" title="中科大镜像源">中科大镜像源</a><br>ubuntu 20.04(focal) 配置如下<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line"># deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure></p><h3 id="把默认的源地址先备份一下"><a href="#把默认的源地址先备份一下" class="headerlink" title="把默认的源地址先备份一下"></a>把默认的源地址先备份一下</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources_init.list</span><br></pre></td></tr></table></figure><h3 id="用vim编辑源文件"><a href="#用vim编辑源文件" class="headerlink" title="用vim编辑源文件"></a>用vim编辑源文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure><div class="note warning simple"><p>删掉原来的源，添加的阿里源，注意 sources.list 文件只能放一种源</p></div><div class="note info simple"><p>在英文模式下按 i 键进行编辑，保存 ESC+Shitf+: 然后输入：wq 保存</p></div><h3 id="更新镜像源"><a href="#更新镜像源" class="headerlink" title="更新镜像源"></a>更新镜像源</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h3 id="更新软件"><a href="#更新软件" class="headerlink" title="更新软件"></a>更新软件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure><h3 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get dist-upgrade</span><br></pre></td></tr></table></figure><div class="note success simple"><p>success 到这步源就全部更新完成了</p></div>]]></content>
-    
-    
-    <summary type="html">Ubuntu 20.04换源教程</summary>
-    
-    
-    
-    <category term="linux" scheme="https://adunm.top/categories/linux/"/>
-    
-    
-    <category term="🖥️ Ubuntu" scheme="https://adunm.top/tags/%F0%9F%96%A5%EF%B8%8F-Ubuntu/"/>
     
   </entry>
   
